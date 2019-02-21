@@ -83,10 +83,10 @@ int main()
     CirQ::getInst()->initQue();
     thread t1[15];
     for(int i=0;i<15;i++)
+    {
         t1[i]=thread(threadFunc,i);
-
-    for(int i=0;i<15;i++)
         t1[i].join();
+    }
     
 
     CirQ::getInst()->print();
