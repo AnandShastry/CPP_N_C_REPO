@@ -5,7 +5,6 @@
 
 using namespace std;
 
-mutex globMut;
 class CirQ
 {
     private:
